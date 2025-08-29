@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter </h2>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <label for="base_currency">From:</label>
+        <select id="base_currency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="CNY">CNY - Chinese Yuan</option>
+            <option value="BRL">BRL - Brazilian Real</option>
+            <option value="ZAR">ZAR - South African Rand</option>
+
+        </select>
+
+        <label for="target_currency">To:</label>
+        <select id="target_currency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <option value="CNY">CNY - Chinese Yuan</option>
+            <option value="BRL">BRL - Brazilian Real</option>
+            <option value="ZAR">ZAR - South African Rand</option>
+        </select>
+
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+        <h3>Conversion History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
