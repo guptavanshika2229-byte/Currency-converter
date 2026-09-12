@@ -20,8 +20,6 @@ It allows users to convert currencies in real-time with an easy-to-use interface
 - **API**: Currency Exchange API (e.g., ExchangeRate API / Forex API)  
 - **Deployment**: Localhost / GitHub / Heroku (optional)
 
----
 
-## 📂 Project Structure
 
 
